@@ -1,26 +1,18 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+/** @jsxRuntime classic */
+/** @jsx jsx */
+import { jsx } from '@emotion/react'
+import { Button, CssVarsProvider } from '@mui/joy';
+import * as styles from './styles'
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+const App = () => {
+	return (
+		<CssVarsProvider>
+			<Button variant="solid">Hello World</Button>
+			<div css={styles.headerWrapper}>
+				hello hello this is proof css works
+			</div>
+		</CssVarsProvider>
+	);
 }
 
 export default App;
