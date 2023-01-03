@@ -1,23 +1,24 @@
 /** @jsxRuntime classic */
 /** @jsx jsx */
 import { jsx } from '@emotion/react'
+import { Link } from 'react-router-dom';
 import * as styles from './styles'
 
 export const Header = () => {
 	return (
 		<div css={styles.headerWrapper}>
 			<div css={styles.leftWrapper}>
-				<div css={styles.link}>
+				<Link to="/listings" css={styles.link}>
 					Browse Rentals
-				</div>
-				<div css={styles.link}>
+				</Link>
+				<Link to="/find-match" css={styles.link}>
 					Find Roommates
-				</div>
+				</Link>
 			</div>
-
-			<div css={styles.logo}>
+			<Link to="/" css={styles.logo}>
 				Kopa
-			</div>
+				<img src="../../../img/logo.svg" css={styles.logoImg} />
+			</Link>
 			<div css={[styles.rightLink, styles.link]}>
 				Account
 			</div>
