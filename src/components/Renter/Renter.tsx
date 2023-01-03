@@ -6,7 +6,7 @@ import * as styles from './styles'
 export const Renter = () => {
 	return (
 		<div css={styles.headerWrapper}>
-			hello
+			renter
 		</div>
 	);
 }
