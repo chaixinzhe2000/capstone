@@ -8,6 +8,7 @@ export const headerWrapper = css`
 	width: 100%;
 	height: 97px;
 	border-bottom: 1px solid ${GRAY};
+	position: relative;
 	label: headerWrapper;
 `
 
@@ -19,6 +20,10 @@ export const logo = css`
 	display: flex;
 	align-items: center;
 	text-decoration: none;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
 	label: logo;
 `
 
