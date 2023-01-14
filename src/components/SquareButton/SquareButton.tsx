@@ -1,4 +1,6 @@
-import { useState } from 'react';
+/** @jsxRuntime classic */
+/** @jsx jsx */
+import { jsx } from '@emotion/react'
 import * as styles from './styles'
 
 export interface SquareButtonProps {
@@ -7,16 +9,16 @@ export interface SquareButtonProps {
     color: string;
     altColor: string;
     backgroundColor: string;
+    hoverBackgroundColor: string;
+    borderColor: string;
     selected: boolean;
     onClick: any;
 }
 
 export const SquareButton = (props: SquareButtonProps) => {
-    const { text, fontWeight, color, altColor, backgroundColor, selected, onClick } = props
-    const staticStyle = {borderRadius: '10px', fontWeight: fontWeight, border: 'solid 1px ' + color, padding: '10px'}
-    let conditionalStyle = {color: selected? altColor: color, backgroundColor: selected? backgroundColor: 'transparent'}
+    const {text, fontWeight, color, altColor, backgroundColor, hoverBackgroundColor, borderColor, selected, onClick} = props
     return (
-        <div css={styles.buttonWrapper} style={{...staticStyle, ...conditionalStyle}} onClick={onClick}>
+        <div css={styles.buttonWrapper({selected, fontWeight, color, altColor, backgroundColor, hoverBackgroundColor, borderColor})} onClick={onClick}>
             {text}
         </div>
     )

@@ -1,5 +1,5 @@
 import { css } from "@emotion/react";
-import { TEAL } from "../../colors";
+import { TEAL, LIGHT_TEAL, BRIGHT_TEAL } from "../../colors";
 
 export const pageWrapper = css`
 	display: flex;
@@ -17,7 +17,7 @@ export const leftSideItems = css`
 
 export const leftTitle = css`
     font-weight: bold;
-    font-size: 4.3vw;
+    font-size: 4vw;
     color: ${TEAL};
     text-align: center;
 `
@@ -31,13 +31,15 @@ export const leftAsset = css`
 `
 
 export const rightSide = css`
-    width: 50vw;
+    width: 55vw;
     background-color: ${TEAL};
-    font-size: 24px;
-    font-weight: 500;
+    font-size: 20px;
+    font-weight: 400;
     color: white;
-    padding-left: 40px;
-    padding-top: 30px;
+    padding-left: 60px;
+    padding-right: 200px;
+    padding-top: 45px;
+    padding-bottom: 45px;
 `
 
 export const rightSideFirstLine = css`
@@ -46,6 +48,89 @@ export const rightSideFirstLine = css`
 `
 
 export const buttonWrapper = css`
-    margin-left: 10px;
-    margin-right: 10px;
+    margin-left: 20px;
+`
+
+export const horizontalBar = css`
+    border: solid 1px ${LIGHT_TEAL};
+    margin-top: 25px;
+    margin-bottom: 25px;
+`
+
+export const tenPointScaleWrapper = css`
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+`
+
+export const tenPointScaleEnd = css`
+    color: ${BRIGHT_TEAL};
+    font-weight: 500;
+`
+
+export const tenPointScale = css`
+    display: flex;
+    justify-content: space-between;
+`
+
+export const tenPointScaleChoice = ({selected}: {selected: boolean}) => css`
+    display: flex;
+    align-items: center;
+    border-radius: 90px;
+    margin-left: 0.5vw;
+    margin-right: 0.5vw;
+    width: 2vw;
+    height: 2vw;
+    justify-content: center;
+    ${selected == true && 
+        `
+        cursor: default;
+        background-color: white;
+        color: ${TEAL};
+        `
+    }
+    &:hover {
+        ${selected == false && 
+            `
+            background-color: ${LIGHT_TEAL};
+            cursor: pointer;
+            `
+        }
+        ${selected == true && 
+            `
+            cursor: default;
+            `
+        }
+    }
+`
+
+export const textInputWrapper = css`
+    width: 60%;
+    margin-top: 10px;
+`
+
+export const textInput = css`
+    background-color: transparent;
+    border: none;
+    font-family: inherit;
+    font-size: inherit;
+    color: white;
+    ::placeholder {
+        color: rgba(255,255,255,0.6)
+    }
+    :focus {
+        outline: none;
+    }
+    padding: 0px;
+    width: 100%;
+`
+
+export const textInputHorizontalBar = css`
+    border: solid 1px white;
+    margin-top: 10px;
+    margin-bottom: 25px;
+`
+
+export const submitButtonWrapper = css`
+    width: 200px;
 `
