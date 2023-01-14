@@ -31,8 +31,7 @@ export const RegistrationPage = () => {
 		if (userType == "RENTER") {
 			return (
 				<div>
-					<hr css={styles.horizontalBar}></hr>
-					<div>
+					<div style={{marginTop: '25px'}}>
 						Please provide this basic information to get started as a renter:
 					</div>
 					<hr css={styles.horizontalBar}></hr>
