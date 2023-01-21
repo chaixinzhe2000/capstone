@@ -1,11 +1,11 @@
 interface IRenterCard {
-    renter_img: string
-    name: string
-    dec: string
-    stay_duration: string
-    occupation: string
-    matched_properties: string[]
-    preferences: string[]
+	renterImg: string
+	name: string
+	description: string
+	stayDuration: string
+	occupation: string
+	matchedProperties: string[]
+	preferences: string[]
 }
 
 const renter1 = "https://t4.ftcdn.net/jpg/02/19/63/31/360_F_219633151_BW6TD8D1EA9OqZu4JgdmeJGg4JBaiAHj.jpg"
@@ -19,85 +19,85 @@ const renter8 = "https://media.istockphoto.com/id/969233490/photo/young-african-
 const renter9 = "https://media.istockphoto.com/id/1289220545/photo/beautiful-woman-smiling-with-crossed-arms.jpg?s=612x612&w=0&k=20&c=qmOTkGstKj1qN0zPVWj-n28oRA6_BHQN8uVLIXg0TF8="
 
 export const renterData: IRenterCard[] = [
-    {
-        renter_img: renter1,
-        name: "John Doe",
-        dec: "I love to travel and explore new places!",
-        stay_duration: "June 1 - August 31",
-        occupation: "Software Engineer",
-        matched_properties: ["44 Queens ", "214 Hope", "315 Thayer"],
-        preferences: ["QUIET", "REMOTE WORK", "OUTDOOR"]
-    },
-    {
-        renter_img: renter2,
-        name: "James Siraj",
-        dec: "I love to dance and bake pastries!",  
-        stay_duration: "June 1 - January 31",
-        occupation: "Product Manager",
-        matched_properties: ["48 Keene", "214 Hope", "315 Thayer"],
-        preferences: ["QUIET", "REMOTE WORK", "OUTDOOR"]
-    },
-    {
-        renter_img: renter3,
-        name: "Jack Smith",
-        dec: "I love to play basketball and watch movies!",
-        stay_duration: "June 1 - December 31",
-        occupation: "Software Engineer",
-        matched_properties: ["44 Queens ", "214 Brown", "315 Bowen"],
-        preferences: ["LOVE", "PARTY", "VIBES"]
-    },
-    {
-        renter_img: renter4,
-        name: "David Arian",
-        dec: "I love playing chess and listening to podcasts while walking",
-        stay_duration: "June 1 - December 31",
-        occupation: "Data Scientist",
-        matched_properties: ["44 Wayland ", "214 Jefferson", "315 Thayer"],
-        preferences: ["MATH", "QUIET", "EXTROVERTED"]
-    },
-    {
-        renter_img: renter5,
-        name: "Mason Quinn",
-        dec: "I like to liverstream online speedruns and practice my piano skills",
-        stay_duration: "June 1 - December 31",
-        occupation: "Actor",
-        matched_properties: ["44 Davidson ", "214 Hope", "315 Hope"],
-        preferences: ["ROBOTICS", "TABLE TENNIS", "SOCCER"]
-    },
-    {
-        renter_img: renter6,
-        name: "Jessica Alvarez",
-        dec: "I like to smoke some hookah, throwing parties and playing board games",
-        stay_duration: "April 1 - November 31",
-        occupation: "Student",
-        matched_properties: ["65 Avalon ", "214 Lloyd", "Riverhouse"],
-        preferences: ["FRIENDLY", "COOK", "LAZY"]
-    },
-    {
-        renter_img: renter7,
-        name: "Samantha Smith",
-        dec: "I like to play video games, watch movies and go to the gym",
-        stay_duration: "June 1 - December 31",
-        occupation: "Student",
-        matched_properties: ["23 Brook ", "214 Young", "315 Freemont"],
-        preferences: ["INTROVERTED", "QUIET", "CLEAN"]
-    },
-    {
-        renter_img: renter8,
-        name: "Yuna Albano",
-        dec: " I mediate often and i really like to sample perfumes sometimes!",
-        stay_duration: "June 1 - December 31",
-        occupation: "Student",
-        matched_properties: ["44 Queens ", "214 Hope", "315 Thayer"],
-        preferences: ["OUTDOOR", "REMOTE WORK", "QUIET"],
-    },
-    {
-        renter_img: renter9,
-        name: "Sara Parker",
-        dec: "I love to dance, sing and paint! I Also have a pet cat named Mochi",
-        stay_duration: "June 1 - December 31",
-        occupation: "Actress",
-        matched_properties: ["44 Queens ", "214 Hope", "315 Thayer"],
-        preferences: ["ACTING", "PARTY", "CLEAN"],
-    },
+	{
+		renterImg: renter1,
+		name: "John Doe",
+		description: "I love to travel and explore new places!",
+		stayDuration: "June 1 - August 31",
+		occupation: "Software Engineer",
+		matchedProperties: ["44 Queens ", "214 Hope", "315 Thayer"],
+		preferences: ["QUIET", "REMOTE WORK", "OUTDOOR"]
+	},
+	{
+		renterImg: renter2,
+		name: "James Siraj",
+		description: "I love to dance and bake pastries!",
+		stayDuration: "June 1 - January 31",
+		occupation: "Product Manager",
+		matchedProperties: ["48 Keene", "214 Hope", "315 Thayer"],
+		preferences: ["QUIET", "REMOTE WORK", "OUTDOOR"]
+	},
+	{
+		renterImg: renter3,
+		name: "Jack Smith",
+		description: "I love to play basketball and watch movies!",
+		stayDuration: "June 1 - December 31",
+		occupation: "Software Engineer",
+		matchedProperties: ["44 Queens ", "214 Brown", "315 Bowen"],
+		preferences: ["LOVE", "PARTY", "VIBES"]
+	},
+	{
+		renterImg: renter4,
+		name: "David Arian",
+		description: "I love playing chess and listening to podcasts while walking",
+		stayDuration: "June 1 - December 31",
+		occupation: "Data Scientist",
+		matchedProperties: ["44 Wayland ", "214 Jefferson", "315 Thayer"],
+		preferences: ["MATH", "QUIET", "EXTROVERTED"]
+	},
+	{
+		renterImg: renter5,
+		name: "Mason Quinn",
+		description: "I like to liverstream online speedruns and practice my piano skills",
+		stayDuration: "June 1 - December 31",
+		occupation: "Actor",
+		matchedProperties: ["44 Davidson ", "214 Hope", "315 Hope"],
+		preferences: ["ROBOTICS", "TABLE TENNIS", "SOCCER"]
+	},
+	{
+		renterImg: renter6,
+		name: "Jessica Alvarez",
+		description: "I like to smoke some hookah, throwing parties and playing board games",
+		stayDuration: "April 1 - November 31",
+		occupation: "Student",
+		matchedProperties: ["65 Avalon ", "214 Lloyd", "Riverhouse"],
+		preferences: ["FRIENDLY", "COOK", "LAZY"]
+	},
+	{
+		renterImg: renter7,
+		name: "Samantha Smith",
+		description: "I like to play video games, watch movies and go to the gym",
+		stayDuration: "June 1 - December 31",
+		occupation: "Student",
+		matchedProperties: ["23 Brook ", "214 Young", "315 Freemont"],
+		preferences: ["INTROVERTED", "QUIET", "CLEAN"]
+	},
+	{
+		renterImg: renter8,
+		name: "Yuna Albano",
+		description: " I mediate often and i really like to sample perfumes sometimes!",
+		stayDuration: "June 1 - December 31",
+		occupation: "Student",
+		matchedProperties: ["44 Queens ", "214 Hope", "315 Thayer"],
+		preferences: ["OUTDOOR", "REMOTE WORK", "QUIET"],
+	},
+	{
+		renterImg: renter9,
+		name: "Sara Parker",
+		description: "I love to dance, sing and paint! I Also have a pet cat named Mochi",
+		stayDuration: "June 1 - December 31",
+		occupation: "Actress",
+		matchedProperties: ["44 Queens ", "214 Hope", "315 Thayer"],
+		preferences: ["ACTING", "PARTY", "CLEAN"],
+	},
 ]
