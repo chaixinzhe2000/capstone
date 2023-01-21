@@ -133,4 +133,19 @@ export const textInputHorizontalBar = css`
 
 export const submitButtonWrapper = css`
     width: 200px;
+    margin-top: 35px;
+`
+export const dropdown = css`
+    width: 150px;
+    background-color: transparent;
+    border: none;
+    font-size: 20px;
+    font-weight: 600;
+    color: white;
+    margin-left: -4px;
+`
+
+export const dropdownWrapper = css`
+    margin-top: 10px;
+    margin-bottom: 20px;
 `

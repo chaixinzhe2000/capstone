@@ -85,7 +85,37 @@ export const RegistrationPage = () => {
 		} else if (userType == "LANDLORD") {
 			return (
 				<div>
-					bi
+					<div style={{marginTop: '25px'}}>
+						Please provide this basic information to get started in creating your property:
+					</div>
+					<hr css={styles.horizontalBar}></hr>
+					<div>
+						Property address:
+					</div>
+					<div>
+						{renderTextBox("eg. 21 Euclid Ave.")}
+					</div>
+					<div>
+						Zip Code:
+					</div>
+					<div>
+						{renderTextBox("02906")}
+					</div>
+					<div>
+						Property type:
+					</div>
+					<div css={styles.dropdownWrapper}>
+						<select name="property-type" css={styles.dropdown}>
+							<option value="house">House</option>
+							<option value="apartment">Apartment</option>
+							<option value="condo">Condo</option>
+							<option value="coop">Co-op</option>
+							<option value="townhome">Townhome</option>
+						</select>
+					</div>
+					<div css={styles.submitButtonWrapper}>
+						<SquareButton text={"Let's get started"} fontWeight={'600'} color={'white'} altColor={ORANGE} backgroundColor={ORANGE} hoverBackgroundColor={ORANGE} borderColor={ORANGE} selected={false} onClick={() => navigate('/listings')}/>
+					</div>
 				</div>
 			)
 		}
