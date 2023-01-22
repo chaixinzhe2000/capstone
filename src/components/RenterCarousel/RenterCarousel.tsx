@@ -1,7 +1,7 @@
 /** @jsxRuntime classic */
 /** @jsx jsx */
 import { jsx } from '@emotion/react'
-import { ListingCard } from '../ListingCard'
+import { RenterCard } from '../RenterCard'
 import * as styles from './styles'
 
 interface RenterCarouselProps {
@@ -19,12 +19,12 @@ export const RenterCarousel = (props: RenterCarouselProps) => {
 			<div css={styles.heading}>{heading}</div>
 			<div css={styles.description}>{description}</div>
 			<div css={styles.scrollWrapper}>
-				<ListingCard />
-				<ListingCard />
-				<ListingCard />
-				<ListingCard />
-				<ListingCard />
-				<ListingCard />
+				<RenterCard />
+				<RenterCard />
+				<RenterCard />
+				<RenterCard />
+				<RenterCard />
+				<RenterCard />
 			</div>
 		</div>
 	);

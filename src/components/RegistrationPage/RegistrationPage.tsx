@@ -1,10 +1,8 @@
 /** @jsxRuntime classic */
 /** @jsx jsx */
 import { jsx } from '@emotion/react'
-import { Dispatch, SetStateAction, useState } from 'react';
+import { useState } from 'react';
 import { LIGHT_TEAL, ORANGE, TEAL } from '../../colors';
-import { RenterCarousel } from '../RenterCarousel';
-import { UserType } from '../../types'
 import { SquareButton } from '../SquareButton';
 import * as styles from './styles'
 import { useNavigate } from 'react-router-dom';
@@ -15,8 +13,8 @@ export const RegistrationPage = () => {
 	const [partyRating, setPartyRating] = useState('')
 	const navigate = useNavigate()
 	const renderTenPointScale = (ratingUseStateVariable: any, setRatingUseStateVariable: any) => (
-		[1,2,3,4,5,6,7,8,9,10].map((item, i) => 
-			<div css={styles.tenPointScaleChoice({selected: ratingUseStateVariable==item})} onClick={() => setRatingUseStateVariable(item)}key={i}>
+		[1, 2, 3, 4, 5, 6, 7, 8, 9, 10].map((item, i) =>
+			<div css={styles.tenPointScaleChoice({ selected: ratingUseStateVariable === item })} onClick={() => setRatingUseStateVariable(item)} key={i}>
 				{item}
 			</div>
 		)
@@ -28,10 +26,10 @@ export const RegistrationPage = () => {
 		</div>
 	)
 	const renderForm = () => {
-		if (userType == "RENTER") {
+		if (userType === "RENTER") {
 			return (
 				<div>
-					<div style={{marginTop: '25px'}}>
+					<div style={{ marginTop: '25px' }}>
 						Please provide this basic information to get started as a renter:
 					</div>
 					<hr css={styles.horizontalBar}></hr>
@@ -78,14 +76,14 @@ export const RegistrationPage = () => {
 						{renderTextBox("Undergraduate Student")}
 					</div>
 					<div css={styles.submitButtonWrapper}>
-						<SquareButton text={"Let's get started"} fontWeight={'600'} color={'white'} altColor={ORANGE} backgroundColor={ORANGE} hoverBackgroundColor={ORANGE} borderColor={ORANGE} selected={false} onClick={() => navigate('/listings')}/>
+						<SquareButton text={"Let's get started"} fontWeight={'600'} color={'white'} altColor={ORANGE} backgroundColor={ORANGE} hoverBackgroundColor={ORANGE} borderColor={ORANGE} selected={false} onClick={() => navigate('/listings')} />
 					</div>
 				</div>
 			)
-		} else if (userType == "LANDLORD") {
+		} else if (userType === "LANDLORD") {
 			return (
 				<div>
-					<div style={{marginTop: '25px'}}>
+					<div style={{ marginTop: '25px' }}>
 						Please provide this basic information to get started in creating your property:
 					</div>
 					<hr css={styles.horizontalBar}></hr>
@@ -114,7 +112,7 @@ export const RegistrationPage = () => {
 						</select>
 					</div>
 					<div css={styles.submitButtonWrapper}>
-						<SquareButton text={"Let's get started"} fontWeight={'600'} color={'white'} altColor={ORANGE} backgroundColor={ORANGE} hoverBackgroundColor={ORANGE} borderColor={ORANGE} selected={false} onClick={() => navigate('/listings')}/>
+						<SquareButton text={"Let's get started"} fontWeight={'600'} color={'white'} altColor={ORANGE} backgroundColor={ORANGE} hoverBackgroundColor={ORANGE} borderColor={ORANGE} selected={false} onClick={() => navigate('/listings')} />
 					</div>
 				</div>
 			)
@@ -125,7 +123,7 @@ export const RegistrationPage = () => {
 			<div css={styles.leftSide}>
 				<div css={styles.leftSideItems}>
 					<div css={styles.leftTitle}>
-						Start Kopa<span style={{color: ORANGE}}>'</span>ing!
+						Start Kopa<span style={{ color: ORANGE }}>'</span>ing!
 					</div>
 					<img css={styles.leftAsset} src="../../../img/registration-page-asset.png" alt="Roommates Living Together Cartoon" />
 				</div>
@@ -135,11 +133,11 @@ export const RegistrationPage = () => {
 					<div>
 						I'm a
 					</div>
-					<div css={styles.buttonWrapper}> 
-						<SquareButton text={'Renter'} fontWeight={'600'} color={'white'} altColor={TEAL} backgroundColor={'white'} hoverBackgroundColor={LIGHT_TEAL} borderColor={'white'} selected={userType=="RENTER"} onClick={() => {setUserType("RENTER")}}/>
+					<div css={styles.buttonWrapper}>
+						<SquareButton text={'Renter'} fontWeight={'600'} color={'white'} altColor={TEAL} backgroundColor={'white'} hoverBackgroundColor={LIGHT_TEAL} borderColor={'white'} selected={userType === "RENTER"} onClick={() => { setUserType("RENTER") }} />
 					</div>
 					<div css={styles.buttonWrapper}>
-						<SquareButton text={'Landlord'} fontWeight={'600'} color={'white'} altColor={TEAL} backgroundColor={'white'} hoverBackgroundColor={LIGHT_TEAL} borderColor={'white'} selected={userType=="LANDLORD"} onClick={() => {setUserType("LANDLORD")}}/>
+						<SquareButton text={'Landlord'} fontWeight={'600'} color={'white'} altColor={TEAL} backgroundColor={'white'} hoverBackgroundColor={LIGHT_TEAL} borderColor={'white'} selected={userType === "LANDLORD"} onClick={() => { setUserType("LANDLORD") }} />
 					</div>
 				</div>
 				{renderForm()}

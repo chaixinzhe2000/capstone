@@ -19,9 +19,9 @@ export const Header = () => {
 				Kopa
 				<img src="../../../img/logo.svg" css={styles.logoImg} />
 			</Link>
-			<div css={[styles.rightLink, styles.link]}>
+			<Link to="/register" css={[styles.rightLink, styles.link]}>
 				Account
-			</div>
+			</Link>
 		</div>
 	);
 }

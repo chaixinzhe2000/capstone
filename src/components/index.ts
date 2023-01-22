@@ -1,4 +1,4 @@
-export * from "./Renter"
+export * from "./RenterCard"
 export * from "./ListingCard"
 export * from "./Header"
 export * from "./ListingPage"

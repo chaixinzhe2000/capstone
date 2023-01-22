@@ -82,7 +82,7 @@ export const tenPointScaleChoice = ({selected}: {selected: boolean}) => css`
     width: 2vw;
     height: 2vw;
     justify-content: center;
-    ${selected == true && 
+    ${selected === true && 
         `
         cursor: default;
         background-color: white;
@@ -90,13 +90,13 @@ export const tenPointScaleChoice = ({selected}: {selected: boolean}) => css`
         `
     }
     &:hover {
-        ${selected == false && 
+        ${selected === false && 
             `
             background-color: ${LIGHT_TEAL};
             cursor: pointer;
             `
         }
-        ${selected == true && 
+        ${selected === true && 
             `
             cursor: default;
             `
