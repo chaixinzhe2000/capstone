@@ -17,7 +17,20 @@ const renter6 = "https://media.istockphoto.com/id/1251308867/photo/smiling-frien
 const renter7 = "https://media.istockphoto.com/id/685132223/photo/businesswoman-with-braided-hair-over-white.jpg?s=612x612&w=0&k=20&c=HmsQrf9AuqHReVZ7GNAggi5udYR7-wW7OzhcHFaqU6Y="
 const renter8 = "https://media.istockphoto.com/id/969233490/photo/young-african-woman-smiling-at-sunset.jpg?s=612x612&w=0&k=20&c=G0cagT6s1rXm455ZN8TCReO1C78ua1xGJPXDi6eKGLA="
 const renter9 = "https://media.istockphoto.com/id/1289220545/photo/beautiful-woman-smiling-with-crossed-arms.jpg?s=612x612&w=0&k=20&c=qmOTkGstKj1qN0zPVWj-n28oRA6_BHQN8uVLIXg0TF8="
+const renter10 = "https://www.planetsport.com/image-library/square/500/p/pep-guardiola-profile.jpg"
+const renter11 = "https://asroma2-cloudinary.corebine.com/asroma2-production/image/upload/c_fill,dpr_3.0,f_webp,g_auto,q_auto,w_768/v1/asroma2-prod/HeadshotMourinho2_iwlwuc"
+const renter12 = "https://www.planetsport.com/image-library/square/500/s/sir-alex-ferguson-17-february-2021.jpg"
+const renter13 = "https://cdn.prod.www.manager-magazin.de/images/3ad24c02-0001-0004-0000-000001373259_w1200_r1_fpx39.92_fpy55.jpg"
+const renter14 = "https://www.theplace2.ru/archive/zinadin_zidan/img/zidane2nr8.jpg"
+const renter15 = "https://www.coachesvoice.com/wp-content/uploads/2021/06/AllegriMobile.jpg"
+const renter16 = "https://resources.premierleague.com/premierleague/photos/players/250x250/man50.png"
+const renter17 = "https://resources.premierleague.com/premierleague/photos/players/250x250/man51018.png"
+const renter18 = "https://resources.premierleague.com/premierleague/photos/players/250x250/man39237.png"
+const renter19 = "https://bet-bet.net/wp-content/uploads/2021/04/Sam-Allardyce-1-300x300.png"
+const renter20 = "https://resources.premierleague.com/premierleague/photos/players/250x250/man36.png"
+const renter21 = "https://resources.premierleague.com/premierleague/photos/players/250x250/man85.png"
 
+// 20 Renter Cards
 export const renterData: IRenterCard[] = [
 	{
 		renterImg: renter1,
@@ -100,4 +113,122 @@ export const renterData: IRenterCard[] = [
 		matchedProperties: ["44 Queens ", "214 Hope", "315 Thayer"],
 		preferences: ["ACTING", "PARTY", "CLEAN"],
 	},
+	{
+		renterImg: renter10,
+		name: "Pep Guardiola",
+		description: "I love to play soccer and watch movies!",
+		stayDuration: "June 1 - December 31",
+		occupation: "Premier League Manager",
+		matchedProperties: ["44 Queens ", "214 Hope", "315 Thayer"],
+		preferences: ["TIKI-TAKA", "REMOTE WORK", "GOAT"]
+	}, 
+	{
+		renterImg: renter11,
+		name: "Jose Mourinho",
+		description: "I love to play soccer and watch movies! Sometimes I like to play chess",
+		stayDuration: "June 1 - December 31",
+		occupation: "Serie A Manager",
+		matchedProperties: ["44 Queens ", "214 Hope", "315 Thayer"],
+		preferences: ["COUNTER-ATTACK", "REMOTE WORK", "BOAT"],
+	},
+	{
+		renterImg: renter12,
+		name: "Alex Ferguson",
+		description: "I love to play soccer and watch movies! Sometimes I like to play chess and Tennis!",
+		stayDuration: "June 1 - December 31",
+		occupation: "Premier League Manager",
+		matchedProperties: ["44 Queens ", "214 Hope", "315 Thayer"],
+		preferences: ["LONG BALL", "REMOTE WORK", "INDOOR"],
+	},
+	{
+		renterImg: renter13,
+		name: "Jurgen Klopp",
+		description: "I love to Rock and Roll!",
+		stayDuration: "June 1 - December 31",
+		occupation: "Premier League Manager",
+		matchedProperties: ["44 Queens ", "214 Hope", "315 Thayer"],
+		preferences: ["HIGH PRESSURE", "REMOTE WORK", "OUTDOOR"],
+	},
+	{
+		renterImg: renter14,
+		name: "Zinedine Zidane",
+		description: "I absolutely love shaving my head and playing football!",
+		stayDuration: "June 1 - December 31",
+		occupation: "France Football Federation Manager",
+		matchedProperties: ["44 Queens ", "214 Hope", "315 Thayer"],
+		preferences: ["TACTICAL", "REMOTE WORK", "OUTDOOR"],
+	},
+	{
+		renterImg: renter15,
+		name: "Masimiliano Allegri",
+		description: "I just love reading books and playing chess.",
+		stayDuration: "June 1 - December 31",
+		occupation: "Serie A Manager",
+		matchedProperties: ["44 Queens ", "214 Hope", "315 Thayer"],
+		preferences: ["NOT TACTICAL", "REMOTE WORK", "INDOOR"],
+	},
+	{
+		renterImg: renter16,
+		name: "Carlo Ancelotti",
+		description: "I love to smoke and raise my eyebrows when i play chess!",
+		stayDuration: "June 1 - December 31",
+		occupation: "Serie A Manager",
+		matchedProperties: ["44 Queens ", "214 Hope", "315 Thayer"],
+		preferences: ["CHAMPIONS LEAGUE", "REMOTE WORK", "OUTDOOR"],
+	},
+	{
+		renterImg: renter17,
+		name: "Mikel Arteta",
+		description: "I enjoy Amazon documentaries and playing chess!",
+		stayDuration: "June 1 - December 31",
+		occupation: "Premier League Manager",
+		matchedProperties: ["44 Queens ", "214 Hope", "315 Thayer"],
+		preferences: ["PRESS", "REMOTE WORK", "OUTDOOR"],
+	},
+	{
+		renterImg: renter18,
+		name: "Thomas Tuchel",
+		description: "I adore watching football!",
+		stayDuration: "June 1 - December 31",
+		occupation: "Premier League Manager",
+		matchedProperties: ["44 Queens ", "214 Hope", "315 Thayer"],
+		preferences: ["TERRORBALL", "REMOTE WORK", "INDOOR"],
+	},
+	{
+		renterImg: renter19,
+		name: "Sam Allardyce",
+		description: "I love to watch talk shows and gamble!",
+		stayDuration: "June 1 - December 31",
+		occupation: "Premier League Manager",
+		matchedProperties: ["44 Queens ", "214 Hope", "315 Thayer"],
+		preferences: ["LONG BALL", "REMOTE WORK", "INDOOR"],
+	},
+	{
+		renterImg: renter20,
+		name: "Rafa Benitez",
+		description: "I love to watch talk shows and speak facts!",
+		stayDuration: "June 1 - December 31",
+		occupation: "Premier League Manager",
+		matchedProperties: ["44 Queens ", "214 Hope", "315 Thayer"],
+		preferences: ["LONG BALL", "REMOTE WORK", "OUTDOOR"],
+	},
+	{
+		renterImg: renter21,
+		name: "David Moyes",
+		description: "I love to watch talk shows and listen to podcasts about financial fair play.",
+		stayDuration: "June 1 - December 31",
+		occupation: "Premier League Manager",
+		matchedProperties: ["44 Queens ", "214 Hope", "315 Thayer"],
+		preferences: ["LONG BALL", "REMOTE WORK", "OUTDOOR"],
+	},
+
+
+
+
+
+
+
+
+
+
 ]
