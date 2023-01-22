@@ -91,7 +91,7 @@ export const renterData: IRenterCard[] = [
 		renterImg: renter8,
 		name: "Yuna Albano",
 		description: " I mediate often and i really like to sample perfumes sometimes!",
-		stayDuration: "June 1 - December 31",
+		stayDuration: "June 1 - December 28",
 		occupation: "Student",
 		matchedProperties: ["44 Queens", "214 Hope", "315 Thayer"],
 		preferences: ["OUTDOOR", "REMOTE WORK", "QUIET"],

@@ -6,7 +6,7 @@ import * as styles from './styles'
 export const ListingCard = () => {
 	return (
 		<div css={styles.wrapper}>
-			hello
+			replace Hello
 		</div>
 	);
 }
