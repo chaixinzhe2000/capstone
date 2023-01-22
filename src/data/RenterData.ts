@@ -1,12 +1,4 @@
-interface IRenterCard {
-	renterImg: string
-	name: string
-	description: string
-	stayDuration: string
-	occupation: string
-	matchedProperties: string[]
-	preferences: string[]
-}
+import { IRenterCard } from "../components"
 
 const renter1 = "https://t4.ftcdn.net/jpg/02/19/63/31/360_F_219633151_BW6TD8D1EA9OqZu4JgdmeJGg4JBaiAHj.jpg"
 const renter2 = "https://media.istockphoto.com/id/1309489745/photo/portrait-of-young-happy-indian-business-man-executive-looking-at-camera-eastern-male.jpg?s=612x612&w=0&k=20&c=2hQ4Sm9Puyf1otnVwcyvnY0fk4af-XxHyGqq9ozPpgE="
@@ -38,7 +30,7 @@ export const renterData: IRenterCard[] = [
 		description: "I love to travel and explore new places!",
 		stayDuration: "June 1 - August 31",
 		occupation: "Software Engineer",
-		matchedProperties: ["44 Queens ", "214 Hope", "315 Thayer"],
+		matchedProperties: ["44 Queens", "214 Hope", "315 Thayer"],
 		preferences: ["QUIET", "REMOTE WORK", "OUTDOOR"]
 	},
 	{
@@ -56,7 +48,7 @@ export const renterData: IRenterCard[] = [
 		description: "I love to play basketball and watch movies!",
 		stayDuration: "June 1 - December 31",
 		occupation: "Software Engineer",
-		matchedProperties: ["44 Queens ", "214 Brown", "315 Bowen"],
+		matchedProperties: ["44 Queens", "214 Brown", "315 Bowen"],
 		preferences: ["LOVE", "PARTY", "VIBES"]
 	},
 	{
@@ -74,7 +66,7 @@ export const renterData: IRenterCard[] = [
 		description: "I like to liverstream online speedruns and practice my piano skills",
 		stayDuration: "June 1 - December 31",
 		occupation: "Actor",
-		matchedProperties: ["44 Davidson ", "214 Hope", "315 Hope"],
+		matchedProperties: ["44 Davidson", "214 Hope", "315 Hope"],
 		preferences: ["ROBOTICS", "TABLE TENNIS", "SOCCER"]
 	},
 	{
@@ -83,7 +75,7 @@ export const renterData: IRenterCard[] = [
 		description: "I like to smoke some hookah, throwing parties and playing board games",
 		stayDuration: "April 1 - November 31",
 		occupation: "Student",
-		matchedProperties: ["65 Avalon ", "214 Lloyd", "Riverhouse"],
+		matchedProperties: ["65 Avalon", "214 Lloyd", "Riverhouse"],
 		preferences: ["FRIENDLY", "COOK", "LAZY"]
 	},
 	{
@@ -92,7 +84,7 @@ export const renterData: IRenterCard[] = [
 		description: "I like to play video games, watch movies and go to the gym",
 		stayDuration: "June 1 - December 31",
 		occupation: "Student",
-		matchedProperties: ["23 Brook ", "214 Young", "315 Freemont"],
+		matchedProperties: ["23 Brook", "214 Young", "315 Freemont"],
 		preferences: ["INTROVERTED", "QUIET", "CLEAN"]
 	},
 	{
@@ -101,7 +93,7 @@ export const renterData: IRenterCard[] = [
 		description: " I mediate often and i really like to sample perfumes sometimes!",
 		stayDuration: "June 1 - December 31",
 		occupation: "Student",
-		matchedProperties: ["44 Queens ", "214 Hope", "315 Thayer"],
+		matchedProperties: ["44 Queens", "214 Hope", "315 Thayer"],
 		preferences: ["OUTDOOR", "REMOTE WORK", "QUIET"],
 	},
 	{
@@ -110,7 +102,7 @@ export const renterData: IRenterCard[] = [
 		description: "I love to dance, sing and paint! I Also have a pet cat named Mochi",
 		stayDuration: "June 1 - December 31",
 		occupation: "Actress",
-		matchedProperties: ["44 Queens ", "214 Hope", "315 Thayer"],
+		matchedProperties: ["44 Queens", "214 Hope", "315 Thayer"],
 		preferences: ["ACTING", "PARTY", "CLEAN"],
 	},
 	{
@@ -119,16 +111,16 @@ export const renterData: IRenterCard[] = [
 		description: "I love to play soccer and watch movies!",
 		stayDuration: "June 1 - December 31",
 		occupation: "Premier League Manager",
-		matchedProperties: ["44 Queens ", "214 Hope", "315 Thayer"],
+		matchedProperties: ["44 Queens", "214 Hope", "315 Thayer"],
 		preferences: ["TIKI-TAKA", "REMOTE WORK", "GOAT"]
-	}, 
+	},
 	{
 		renterImg: renter11,
 		name: "Jose Mourinho",
 		description: "I love to play soccer and watch movies! Sometimes I like to play chess",
 		stayDuration: "June 1 - December 31",
 		occupation: "Serie A Manager",
-		matchedProperties: ["44 Queens ", "214 Hope", "315 Thayer"],
+		matchedProperties: ["44 Queens", "214 Hope", "315 Thayer"],
 		preferences: ["COUNTER-ATTACK", "REMOTE WORK", "BOAT"],
 	},
 	{
@@ -137,7 +129,7 @@ export const renterData: IRenterCard[] = [
 		description: "I love to play soccer and watch movies! Sometimes I like to play chess and Tennis!",
 		stayDuration: "June 1 - December 31",
 		occupation: "Premier League Manager",
-		matchedProperties: ["44 Queens ", "214 Hope", "315 Thayer"],
+		matchedProperties: ["44 Queens", "214 Hope", "315 Thayer"],
 		preferences: ["LONG BALL", "REMOTE WORK", "INDOOR"],
 	},
 	{
@@ -146,25 +138,25 @@ export const renterData: IRenterCard[] = [
 		description: "I love to Rock and Roll!",
 		stayDuration: "June 1 - December 31",
 		occupation: "Premier League Manager",
-		matchedProperties: ["44 Queens ", "214 Hope", "315 Thayer"],
+		matchedProperties: ["44 Queens", "214 Hope", "315 Thayer"],
 		preferences: ["HIGH PRESSURE", "REMOTE WORK", "OUTDOOR"],
 	},
 	{
-		renterImg: renter14,
+		renterImg: renter1,
 		name: "Zinedine Zidane",
 		description: "I absolutely love shaving my head and playing football!",
 		stayDuration: "June 1 - December 31",
-		occupation: "France Football Federation Manager",
-		matchedProperties: ["44 Queens ", "214 Hope", "315 Thayer"],
+		occupation: "France Manager",
+		matchedProperties: ["44 Queens", "214 Hope", "315 Thayer"],
 		preferences: ["TACTICAL", "REMOTE WORK", "OUTDOOR"],
 	},
 	{
-		renterImg: renter15,
+		renterImg: renter20,
 		name: "Masimiliano Allegri",
 		description: "I just love reading books and playing chess.",
 		stayDuration: "June 1 - December 31",
 		occupation: "Serie A Manager",
-		matchedProperties: ["44 Queens ", "214 Hope", "315 Thayer"],
+		matchedProperties: ["44 Queens", "214 Hope", "315 Thayer"],
 		preferences: ["NOT TACTICAL", "REMOTE WORK", "INDOOR"],
 	},
 	{
@@ -173,8 +165,8 @@ export const renterData: IRenterCard[] = [
 		description: "I love to smoke and raise my eyebrows when i play chess!",
 		stayDuration: "June 1 - December 31",
 		occupation: "Serie A Manager",
-		matchedProperties: ["44 Queens ", "214 Hope", "315 Thayer"],
-		preferences: ["CHAMPIONS LEAGUE", "REMOTE WORK", "OUTDOOR"],
+		matchedProperties: ["44 Queens", "214 Hope", "315 Thayer"],
+		preferences: ["REMOTE WORK", "OUTDOOR"],
 	},
 	{
 		renterImg: renter17,
@@ -182,7 +174,7 @@ export const renterData: IRenterCard[] = [
 		description: "I enjoy Amazon documentaries and playing chess!",
 		stayDuration: "June 1 - December 31",
 		occupation: "Premier League Manager",
-		matchedProperties: ["44 Queens ", "214 Hope", "315 Thayer"],
+		matchedProperties: ["44 Queens", "214 Hope", "315 Thayer"],
 		preferences: ["PRESS", "REMOTE WORK", "OUTDOOR"],
 	},
 	{
@@ -191,7 +183,7 @@ export const renterData: IRenterCard[] = [
 		description: "I adore watching football!",
 		stayDuration: "June 1 - December 31",
 		occupation: "Premier League Manager",
-		matchedProperties: ["44 Queens ", "214 Hope", "315 Thayer"],
+		matchedProperties: ["44 Queens", "214 Hope", "315 Thayer"],
 		preferences: ["TERRORBALL", "REMOTE WORK", "INDOOR"],
 	},
 	{
@@ -200,7 +192,7 @@ export const renterData: IRenterCard[] = [
 		description: "I love to watch talk shows and gamble!",
 		stayDuration: "June 1 - December 31",
 		occupation: "Premier League Manager",
-		matchedProperties: ["44 Queens ", "214 Hope", "315 Thayer"],
+		matchedProperties: ["44 Queens", "214 Hope", "315 Thayer"],
 		preferences: ["LONG BALL", "REMOTE WORK", "INDOOR"],
 	},
 	{
@@ -209,7 +201,7 @@ export const renterData: IRenterCard[] = [
 		description: "I love to watch talk shows and speak facts!",
 		stayDuration: "June 1 - December 31",
 		occupation: "Premier League Manager",
-		matchedProperties: ["44 Queens ", "214 Hope", "315 Thayer"],
+		matchedProperties: ["44 Queens", "214 Hope", "315 Thayer"],
 		preferences: ["LONG BALL", "REMOTE WORK", "OUTDOOR"],
 	},
 	{
@@ -218,7 +210,7 @@ export const renterData: IRenterCard[] = [
 		description: "I love to watch talk shows and listen to podcasts about financial fair play.",
 		stayDuration: "June 1 - December 31",
 		occupation: "Premier League Manager",
-		matchedProperties: ["44 Queens ", "214 Hope", "315 Thayer"],
+		matchedProperties: ["44 Queens", "214 Hope", "315 Thayer"],
 		preferences: ["LONG BALL", "REMOTE WORK", "OUTDOOR"],
 	},
 

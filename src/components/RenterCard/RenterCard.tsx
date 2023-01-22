@@ -3,14 +3,27 @@
 import { jsx } from '@emotion/react'
 import * as styles from './styles'
 
-export const RenterCard = () => {
+export interface IRenterCard {
+	renterImg: string
+	name: string
+	description: string
+	stayDuration: string
+	occupation: string
+	matchedProperties: string[]
+	preferences: string[]
+}
+
+export const RenterCard = (props: IRenterCard) => {
+
+	const { renterImg, name, description, stayDuration, occupation, matchedProperties, preferences } = props
+
 	return (
 		<div css={styles.wrapper}>
 			<div css={styles.topWrapper}>
-				<img src="https://t4.ftcdn.net/jpg/02/19/63/31/360_F_219633151_BW6TD8D1EA9OqZu4JgdmeJGg4JBaiAHj.jpg" css={styles.image} />
+				<img src={renterImg} css={styles.image} />
 				<div css={styles.nameAndDescription}>
-					<div css={styles.name}>Alex Swift</div>
-					<div css={styles.description}>I love keyboards & I am always happy to make you coffee!</div>
+					<div css={styles.name}>{name}</div>
+					<div css={styles.description}>{description}</div>
 				</div>
 			</div>
 			<div css={styles.bottomWrapper}>
@@ -20,15 +33,27 @@ export const RenterCard = () => {
 					<div css={styles.propertyTitle}>Matched<br />properties</div>
 				</div>
 				<div css={styles.right}>
-					<div css={styles.content}>June 1</div>
-					<div css={styles.content}>Medical Student</div>
-					<div css={styles.content}>Avalon at Center Place, the 5th, via7 Apartements</div>
+					<div css={styles.content}>{stayDuration}</div>
+					<div css={styles.content}>{occupation}</div>
+					<div css={styles.content}>{matchedProperties.map((property, idx) => {
+						if (idx !== matchedProperties.length - 1) {
+							return property + ", "
+						} else {
+							return property
+						}
+					})}</div>
 				</div>
 			</div>
 			<div css={styles.footer}>
-				<div>ROBOTICS, TABLE TENNIS, SOCCER</div>
+				<div>{preferences.map((preference, idx) => {
+					if (idx !== preferences.length - 1) {
+						return preference + ", "
+					} else {
+						return preference
+					}
+				})}</div>
 				<img src="../../img/verified.svg" />
 			</div>
-		</div>
+		</div >
 	);
 }
