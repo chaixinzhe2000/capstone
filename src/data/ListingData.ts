@@ -1,14 +1,4 @@
-interface IListingCard {
-	listingImg: string
-	title: string
-	city: string
-	zipCode: string
-	numOfBedrooms: number
-	numOfBathrooms: number
-	price: string
-	numOfMatches: number
-}
-
+import { IListingCard } from "../components"
 
 const const_city = "New York, NY"
 
@@ -33,10 +23,6 @@ const west_side = "https://www.londonperfect.com/blog/wp-content/uploads/2019/09
 const south_side = "https://i.pinimg.com/originals/1b/fb/73/1bfb7390791e1e1cfd5b932e39bcd910.jpg"
 const central = "https://www.londonperfect.com/blog/wp-content/uploads/2019/05/Churchill.jpg"
 const bed_sty = "https://st.hzcdn.com/simgs/877114a1086e696e_4-1743/midcentury-living-room.jpg"
-
-
-
-
 
 // 20 Listings in New York
 export const ListingData: IListingCard[] = [
@@ -143,128 +129,128 @@ export const ListingData: IListingCard[] = [
 		numOfMatches: 3
 	},
 
-    {
-        listingImg: soho,
-        title: "Soho Flat",
-        city: const_city,
-        zipCode: "11213",
-        numOfBedrooms: 1,
-        numOfBathrooms: 1,
-        price: "$6,500/month",
-        numOfMatches: 3
+	{
+		listingImg: soho,
+		title: "Soho Flat",
+		city: const_city,
+		zipCode: "11213",
+		numOfBedrooms: 1,
+		numOfBathrooms: 1,
+		price: "$6,500/month",
+		numOfMatches: 3
 
 
-    },
-    {
-        listingImg: chinatown,
-        title: "Chinatown Flat",
-        city: const_city,
-        zipCode: "11213",
-        numOfBedrooms: 3,
-        numOfBathrooms: 3.5,
-        price: "$10,500/month",
-        numOfMatches: 1
-    },
-    {
-        listingImg: brooklyn,
-        title: "Brooklyn High Rise",
-        city: const_city,
-        zipCode: "11213",
-        numOfBedrooms: 3,
-        numOfBathrooms: 3.5,
-        price: "$10,500/month",
-        numOfMatches: 1
-    },
-    {
-        listingImg: harlem,
-        title: "Harlem High Rise",
-        city: const_city,
-        zipCode: "11213",
-        numOfBedrooms: 3,
-        numOfBathrooms: 3.5,
-        price: "$7,500/month",
-        numOfMatches: 1
-    },
-    {
-        listingImg: bronx,
-        title: "Bronx Cozy Condo",
-        city: const_city,
-        zipCode: "11213",
-        numOfBedrooms: 3,
-        numOfBathrooms: 3.5,
-        price: "$7,500/month",
-        numOfMatches: 1
-    },
-    {
-        listingImg: perri,
-        title: "Perri's Palace Apartments",
-        city: const_city,
-        zipCode: "11213",
-        numOfBedrooms: 2,
-        numOfBathrooms: 1.5,
-        price: "$9,500/month",
-        numOfMatches: 1
-    },
-    {
-        listingImg: tribos,
-        title: "Tribos Apartment Complex",
-        city: const_city,
-        zipCode: "11213",
-        numOfBedrooms: 2,
-        numOfBathrooms: 2.5,
-        price: "$1,500/month",
-        numOfMatches: 0
-    },
-    {
-        listingImg: tribeca,
-        title: "Tribeca Cozy House",
-        city: const_city,
-        zipCode: "11213",
-        numOfBedrooms: 5,
-        numOfBathrooms: 5.5,
-        price: "$3,500/month",
-        numOfMatches: 0
-    },
+	},
+	{
+		listingImg: chinatown,
+		title: "Chinatown Flat",
+		city: const_city,
+		zipCode: "11213",
+		numOfBedrooms: 3,
+		numOfBathrooms: 3.5,
+		price: "$10,500/month",
+		numOfMatches: 1
+	},
+	{
+		listingImg: brooklyn,
+		title: "Brooklyn High Rise",
+		city: const_city,
+		zipCode: "11213",
+		numOfBedrooms: 3,
+		numOfBathrooms: 3.5,
+		price: "$10,500/month",
+		numOfMatches: 1
+	},
+	{
+		listingImg: harlem,
+		title: "Harlem High Rise",
+		city: const_city,
+		zipCode: "11213",
+		numOfBedrooms: 3,
+		numOfBathrooms: 3.5,
+		price: "$7,500/month",
+		numOfMatches: 1
+	},
+	{
+		listingImg: bronx,
+		title: "Bronx Cozy Condo",
+		city: const_city,
+		zipCode: "11213",
+		numOfBedrooms: 3,
+		numOfBathrooms: 3.5,
+		price: "$7,500/month",
+		numOfMatches: 1
+	},
+	{
+		listingImg: perri,
+		title: "Perri's Palace Apartments",
+		city: const_city,
+		zipCode: "11213",
+		numOfBedrooms: 2,
+		numOfBathrooms: 1.5,
+		price: "$9,500/month",
+		numOfMatches: 1
+	},
+	{
+		listingImg: tribos,
+		title: "Tribos Apartment Complex",
+		city: const_city,
+		zipCode: "11213",
+		numOfBedrooms: 2,
+		numOfBathrooms: 2.5,
+		price: "$1,500/month",
+		numOfMatches: 0
+	},
+	{
+		listingImg: tribeca,
+		title: "Tribeca Cozy House",
+		city: const_city,
+		zipCode: "11213",
+		numOfBedrooms: 5,
+		numOfBathrooms: 5.5,
+		price: "$3,500/month",
+		numOfMatches: 0
+	},
 
 
-    {
-        listingImg: west_side,
-        title: "West Side Cozy House",
-        city: const_city,
-        zipCode: "11213",
-        numOfBedrooms: 2,
-        numOfBathrooms: 2.5,
-        price: "$2,500/month",
-        numOfMatches: 0
-    },
-    {
-        listingImg: south_side,
-        title: "South Side Cozy House",
-        city: const_city,
-        zipCode: "11213",
-        numOfBedrooms: 2,
-        numOfBathrooms: 2.5,
-        price: "$11,500/month",
-        numOfMatches: 0
-    },
-    {
-        listingImg: central,
-        title: "Cozy House Northbound of Central Park",
-        city: const_city,
-        zipCode: "11213",
-        numOfBedrooms: 2,
-        numOfBathrooms: 2.5,
-        price: "$7,500/month",
-        numOfMatches: 0
-    },
-    {
-        listingImg: bed_sty,
-        title: "Bed Stuy Cozy House",
-        city: const_city,
-        zipCode: "11213",
-        numOfBedrooms: 2,
-        numOfBathrooms: 2.5,
-        price: "$9,500/month",
-        numOfMatches: 0
-    }
+	{
+		listingImg: west_side,
+		title: "West Side Cozy House",
+		city: const_city,
+		zipCode: "11213",
+		numOfBedrooms: 2,
+		numOfBathrooms: 2.5,
+		price: "$2,500/month",
+		numOfMatches: 0
+	},
+	{
+		listingImg: south_side,
+		title: "South Side Cozy House",
+		city: const_city,
+		zipCode: "11213",
+		numOfBedrooms: 2,
+		numOfBathrooms: 2.5,
+		price: "$11,500/month",
+		numOfMatches: 0
+	},
+	{
+		listingImg: central,
+		title: "Cozy House Northbound of Central Park",
+		city: const_city,
+		zipCode: "11213",
+		numOfBedrooms: 2,
+		numOfBathrooms: 2.5,
+		price: "$7,500/month",
+		numOfMatches: 0
+	},
+	{
+		listingImg: bed_sty,
+		title: "Bed Stuy Cozy House",
+		city: const_city,
+		zipCode: "11213",
+		numOfBedrooms: 2,
+		numOfBathrooms: 2.5,
+		price: "$9,500/month",
+		numOfMatches: 0
+	}
 ];

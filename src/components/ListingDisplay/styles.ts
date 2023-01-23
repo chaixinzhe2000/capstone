@@ -5,6 +5,7 @@ export const wrapper = css`
 	height: calc(100vh - 138px);
 	font-family: 'DM Sans', sans-serif;
 	padding: 20px 30px;
+	overflow-y: scroll;
 `
 
 export const header = css`

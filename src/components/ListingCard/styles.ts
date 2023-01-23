@@ -1,5 +1,5 @@
 import { css } from "@emotion/react";
-import { GRAY, LIGHT_GRAY } from "../../colors";
+import { GRAY, LIGHT_GRAY, TEAL } from "../../colors";
 
 export const wrapper = css`
 	border: 1px solid ${GRAY};
@@ -43,12 +43,12 @@ export const left10 = css`
 
 export const price = css`
 	font-weight: 700;
-
 `
 
 export const number = css`
 	font-size: 17px;
 	font-weight: 600;
+	color: ${TEAL};
 `
 
 export const matches = css`
