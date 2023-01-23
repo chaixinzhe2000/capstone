@@ -10,7 +10,7 @@ interface IListingCard {
 }
 
 
-const const_city = "New York,NY"
+const const_city = "New York, NY"
 
 const dumbo = "https://images.adsttc.com/media/images/5a95/95a7/f197/cc10/a800/004b/newsletter/Exterior6.jpg?1519752609"
 const fin_dist = "https://img.gtsstatic.net/reno/imagereader.aspx?imageurl=https%3A%2F%2Fsir.azureedge.net%2F1253i215%2Fhx07mxa66s0e4gj8bda2qn2zg1i215&option=N&h=472&permitphotoenlargement=false"

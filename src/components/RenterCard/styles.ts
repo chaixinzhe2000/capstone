@@ -1,5 +1,5 @@
 import { css } from "@emotion/react";
-import { GRAY, TEAL } from "../../colors";
+import { GRAY, LIGHT_GRAY, TEAL } from "../../colors";
 
 export const wrapper = css`
 	border: 1px solid ${GRAY};
