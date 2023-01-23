@@ -6,6 +6,7 @@ export const wrapper = css`
 	min-width: 250px;
 	min-height: 285px;
 	border-radius: 10px;
+	cursor: pointer;
 `
 
 export const header = css`
@@ -26,6 +27,7 @@ export const bottomWrapper = css`
 	display: flex;
 	margin-top: 25px;
 	justify-content: space-between;
+	align-items: flex-end;
 	margin-right: 15px;
 	margin-left: 15px;
 `
@@ -37,4 +39,19 @@ export const gray = css`
 
 export const left10 = css`
 	margin-left: 15px;
+`
+
+export const price = css`
+	font-weight: 700;
+
+`
+
+export const number = css`
+	font-size: 17px;
+	font-weight: 600;
+`
+
+export const matches = css`
+margin-top: -5px;
+	font-size: 12px;
 `

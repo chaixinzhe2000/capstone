@@ -13,15 +13,13 @@ export const ListingCard = () => {
 			<div css={styles.bottomWrapper}>
 				<div>
 					<div css={styles.gray}>Each pays</div>
-					<div>$3000/month</div>
+					<div css={styles.price}>$3000/month</div>
 				</div>
 				<div>
-					<div>8</div>
-					<div>matches</div>
+					<div css={styles.number}>8</div>
+					<div css={styles.matches}>matches</div>
 				</div>
-
 			</div>
-
 		</div>
 	);
 }
